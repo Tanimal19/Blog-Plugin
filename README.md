@@ -1,10 +1,9 @@
 # Blog-Plugin
+These are the code snippets of some plugin that I use on my [blog](https://tanimal19.github.io/)
+just some basic html, css, js
 
-These are some plugins I used in my personal blog
-which is powered by [**hexo**](https://hexo.io/) & Theme [**vivia**](https://github.com/saicaca/hexo-theme-vivia)
-
+non-detailed explanation :
 ### local search
-
 
 
 ### table of content
