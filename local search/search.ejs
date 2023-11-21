@@ -1,0 +1,16 @@
+/*  these code is embed in navbar.ejs */
+
+<navbar id="navbar">
+  <nav id="sub-nav">
+    <form id="search-box">
+        <input type="text" id="search-input" class="hidden"  placeholder="Search"/>
+        <span id="clear-btn" class="hidden">
+          <%- partial('_icon/clear') %>
+        </span>
+    </form>
+    <span id="search-btn" class="nav-icon">
+      <%- partial('_icon/search') %>
+    </span>
+  </nav>
+</navbar>
+<div id="search-result"></div>

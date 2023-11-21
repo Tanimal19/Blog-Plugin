@@ -1,0 +1,9 @@
+<% if (is_post()){ %>
+  <div id="toc-wrap" class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title"><%= __('Content') %></h3>
+      <div id="toc"></div>
+    </div>
+  </div>
+	<script src="<%- url_for("/js/toc.js") %>"></script>
+<% } %>

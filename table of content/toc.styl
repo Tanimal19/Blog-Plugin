@@ -1,0 +1,28 @@
+#toc ul
+  list-style: none
+
+.toc-link
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: var(--btn-text-neutral-text) !important
+  font-weight: medium
+  border-radius: inner-radius
+  padding-left: 0
+  padding-right: 8px
+  padding-left: 8px
+  opacity: 1
+  transition: height 0.2s ease-in-out, opacity 0.25s
+
+  &:hover
+    font-weight: bold
+
+.active
+  padding-left: 12px
+  background: var(--btn-text-hover)
+  color: var(--btn-text-light-text) !important
+
+.hidden
+  height: 0
+  opacity: 0

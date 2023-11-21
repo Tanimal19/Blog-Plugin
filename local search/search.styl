@@ -1,0 +1,96 @@
+
+--search-width = 160px
+
+#search-result
+  height: fit-content
+  margin-top: - card-radius
+  background: var(--nav-dropdown-bg)
+  transition: background trans-style, height trans-style
+  border-radius: 0 0 card-radius card-radius
+  max-width: 100%
+  .local-search-empty
+    color: var(--primary)
+    line-height: 44px
+    text-align: center
+    display: block
+    font-size: 16px
+    font-weight: normal
+  ul
+    display: flex
+    flex-direction: column
+    overflow-y: scroll
+    overflow-x: hidden
+    padding-top: card-radius + 2px
+    padding-bottom: 2px
+    max-height: 250px
+    li
+      flex: 0 0 auto
+      flex-direction: row
+      text-align: left
+      max-height: 50px
+      overflow: hidden
+      padding-left: 20px
+      padding-right: 20px
+      margin: 10px 30px 0px 30px
+      border-bottom: 1px solid var(--not-theme-color)
+      &:last-child
+        border-bottom: 0
+        margin-bottom: 0
+      a
+        font-size: 16px
+        font-weight: bold
+        color: var(--not-theme-color)
+        &:hover
+          color: var(--primary)
+      p
+        margin: 10px 10px
+        font-size: 14px
+        color: var(--not-theme-color)
+        overflow: hidden
+      em.search-keyword
+        color: var(--primary)
+
+:root
+  &[theme="light"]
+    --theme-color: #FFFFFF
+    --not-theme-color: #191919
+  &[theme="dark"]
+    --theme-color: #1E212B
+    --not-theme-color: #E9E9EA
+
+#search-box
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 44px
+  position: relative
+
+#search-box .hidden
+  display: none
+
+#search-input
+  border: none
+  border-bottom: 1px solid var(--not-theme-color)
+  background-color: var(--theme-color)
+  color: var(--not-theme-color)
+  padding: 5
+  outline: none
+  height: 60%
+  width: var(--search-width)
+  right: 10px
+
+#search-btn:hover
+  --not-theme-color: var(--primary)
+
+#clear-btn
+  @extend $nav-link
+  text-align: center
+  width: 25px
+  height: 25px
+  display: flex
+  cursor: pointer
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: 0
+
